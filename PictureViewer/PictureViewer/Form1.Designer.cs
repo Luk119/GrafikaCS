@@ -46,7 +46,7 @@
             // Button1
             // 
             this.Button1.AutoSize = true;
-            this.Button1.Location = new System.Drawing.Point(3, 705);
+            this.Button1.Location = new System.Drawing.Point(3, 410);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(60, 17);
             this.Button1.TabIndex = 2;
@@ -56,6 +56,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
@@ -70,36 +71,38 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(876, 780);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(732, 453);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 2);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(870, 696);
+            this.pictureBox1.Size = new System.Drawing.Size(726, 401);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.flowLayoutPanel1.Controls.Add(this.Close);
             this.flowLayoutPanel1.Controls.Add(this.SetBackgroundColor);
             this.flowLayoutPanel1.Controls.Add(this.ClearPicture);
             this.flowLayoutPanel1.Controls.Add(this.showPicture);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(134, 705);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(112, 410);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(739, 32);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(617, 32);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // Close
             // 
             this.Close.AutoSize = true;
-            this.Close.Location = new System.Drawing.Point(661, 3);
+            this.Close.Location = new System.Drawing.Point(539, 3);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(75, 23);
             this.Close.TabIndex = 12;
@@ -110,7 +113,7 @@
             // SetBackgroundColor
             // 
             this.SetBackgroundColor.AutoSize = true;
-            this.SetBackgroundColor.Location = new System.Drawing.Point(566, 3);
+            this.SetBackgroundColor.Location = new System.Drawing.Point(444, 3);
             this.SetBackgroundColor.Name = "SetBackgroundColor";
             this.SetBackgroundColor.Size = new System.Drawing.Size(89, 23);
             this.SetBackgroundColor.TabIndex = 11;
@@ -121,7 +124,7 @@
             // ClearPicture
             // 
             this.ClearPicture.AutoSize = true;
-            this.ClearPicture.Location = new System.Drawing.Point(470, 3);
+            this.ClearPicture.Location = new System.Drawing.Point(348, 3);
             this.ClearPicture.Name = "ClearPicture";
             this.ClearPicture.Size = new System.Drawing.Size(90, 23);
             this.ClearPicture.TabIndex = 10;
@@ -132,7 +135,7 @@
             // showPicture
             // 
             this.showPicture.AutoSize = true;
-            this.showPicture.Location = new System.Drawing.Point(388, 3);
+            this.showPicture.Location = new System.Drawing.Point(266, 3);
             this.showPicture.Name = "showPicture";
             this.showPicture.Size = new System.Drawing.Size(76, 23);
             this.showPicture.TabIndex = 9;
@@ -151,8 +154,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(876, 780);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(732, 453);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "przeglądarki obrazów";
