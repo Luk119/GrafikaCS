@@ -208,5 +208,16 @@ namespace MathQuiz
                 startButton.Enabled = true;
             }
         }
+
+        private void answer_Enter(object sender, EventArgs e)
+        {
+            NumericUpDown answerBox = sender as NumericUpDown;
+
+            if (answerBox != null)
+            {
+                int lengthOfAnswer = answerBox.Value.ToString().Length;
+                answerBox.Select(0, lengthOfAnswer);
+            }
+        }
     }
 }

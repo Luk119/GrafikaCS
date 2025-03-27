@@ -133,6 +133,7 @@ namespace MathQuiz
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(100, 35);
             this.sum.TabIndex = 1;
+            this.sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // minusLeftLabel
             // 
