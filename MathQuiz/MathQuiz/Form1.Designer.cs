@@ -1,4 +1,6 @@
-﻿namespace MathQuiz
+﻿using System;
+
+namespace MathQuiz
 {
     partial class Form1
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.timeLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.plusLeftLabel = new System.Windows.Forms.Label();
@@ -49,12 +52,13 @@
             this.dividedLeftLabel = new System.Windows.Forms.Label();
             this.minus = new System.Windows.Forms.NumericUpDown();
             this.times = new System.Windows.Forms.NumericUpDown();
-            this.divide = new System.Windows.Forms.NumericUpDown();
+            this.divided = new System.Windows.Forms.NumericUpDown();
             this.startButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.times)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.divide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.divided)).BeginInit();
             this.SuspendLayout();
             // 
             // timeLabel
@@ -128,7 +132,7 @@
             this.sum.MaximumSize = new System.Drawing.Size(100, 0);
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(100, 35);
-            this.sum.TabIndex = 7;
+            this.sum.TabIndex = 1;
             // 
             // minusLeftLabel
             // 
@@ -257,7 +261,7 @@
             this.minus.MaximumSize = new System.Drawing.Size(100, 0);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(100, 35);
-            this.minus.TabIndex = 20;
+            this.minus.TabIndex = 2;
             // 
             // times
             // 
@@ -266,16 +270,16 @@
             this.times.MaximumSize = new System.Drawing.Size(100, 0);
             this.times.Name = "times";
             this.times.Size = new System.Drawing.Size(100, 35);
-            this.times.TabIndex = 21;
+            this.times.TabIndex = 3;
             // 
-            // divide
+            // divided
             // 
-            this.divide.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.divide.Location = new System.Drawing.Point(281, 265);
-            this.divide.MaximumSize = new System.Drawing.Size(100, 0);
-            this.divide.Name = "divide";
-            this.divide.Size = new System.Drawing.Size(100, 35);
-            this.divide.TabIndex = 22;
+            this.divided.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.divided.Location = new System.Drawing.Point(281, 265);
+            this.divided.MaximumSize = new System.Drawing.Size(100, 0);
+            this.divided.Name = "divided";
+            this.divided.Size = new System.Drawing.Size(100, 35);
+            this.divided.TabIndex = 4;
             // 
             // startButton
             // 
@@ -289,13 +293,18 @@
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 357);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.divide);
+            this.Controls.Add(this.divided);
             this.Controls.Add(this.times);
             this.Controls.Add(this.minus);
             this.Controls.Add(this.label10);
@@ -321,10 +330,11 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Math Quiz";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.times)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.divide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.divided)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,8 +363,9 @@
         private System.Windows.Forms.Label dividedLeftLabel;
         private System.Windows.Forms.NumericUpDown minus;
         private System.Windows.Forms.NumericUpDown times;
-        private System.Windows.Forms.NumericUpDown divide;
+        private System.Windows.Forms.NumericUpDown divided;
         private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
