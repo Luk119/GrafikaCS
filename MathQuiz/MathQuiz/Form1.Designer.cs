@@ -263,6 +263,7 @@ namespace MathQuiz
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(100, 35);
             this.minus.TabIndex = 2;
+            this.minus.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // times
             // 
@@ -272,6 +273,7 @@ namespace MathQuiz
             this.times.Name = "times";
             this.times.Size = new System.Drawing.Size(100, 35);
             this.times.TabIndex = 3;
+            this.times.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // divided
             // 
@@ -281,6 +283,7 @@ namespace MathQuiz
             this.divided.Name = "divided";
             this.divided.Size = new System.Drawing.Size(100, 35);
             this.divided.TabIndex = 4;
+            this.divided.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // startButton
             // 
